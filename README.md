@@ -28,6 +28,10 @@ Use Navigator.push with passing this widget and pass a custom animation.
 
 I used this widget with ListView to apply a beautiful looking on list items.
 
+### Utilities.showSnackBar
+
+Workaround to show snackBar without need to Scaffold.
+
 
 ## Feel free to contribute and share useful widgets that prevent repetitive tasks.
 

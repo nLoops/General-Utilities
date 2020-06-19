@@ -5,3 +5,9 @@
 * I will keep updating this package with this kind of utilities. 
 
 * you're more than welcome to contribute.
+
+## [0.0.2] Second Release
+
+* Adding example project
+
+* Adding showSnackBar function
