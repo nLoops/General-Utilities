@@ -1,6 +1,6 @@
 name: general_utilities
 description: A set of general utilites usually needed for any project.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/nLoops/General-Utilities
 
 environment:
