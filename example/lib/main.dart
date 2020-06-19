@@ -25,23 +25,25 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('General Utilities'),
       ),
-      body: FooterLayout(body: DataLoadingWidget(title: 'Loading ....')
-          , footer: Container(
+      body: FooterLayout(
+        body: DataLoadingWidget(title: 'Loading ....'),
+        footer: Container(
           color: Colors.grey[100],
-    height:  60.0,
-    child: Center(
-    child: RaisedButton(onPressed: (){},
-    child: Text('Show snackbar!'),)),
-    ),
-
-    ),
+          height: 60.0,
+          child: Center(
+              child: RaisedButton(
+            onPressed: () =>
+                Utilities.showSnackBar(context, 'Snackbar widget !'),
+            child: Text('Show snackbar!'),
+          )),
+        ),
+      ),
     );
   }
 }
