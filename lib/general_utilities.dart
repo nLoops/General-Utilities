@@ -4,3 +4,4 @@ export 'src/no_data_widget.dart';
 export 'src/restart_widget.dart';
 export 'src/route_animation.dart';
 export 'src/widget_animator.dart';
+export 'src/res/utilities.dart';
