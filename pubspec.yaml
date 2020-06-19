@@ -1,7 +1,6 @@
 name: general_utilities
 description: A set of general utilites usually needed for any project.
 version: 0.0.1
-author: Ahmed Ibrahim a.elgammal112@gmail.com
 homepage: https://github.com/nLoops/General-Utilities
 
 environment:

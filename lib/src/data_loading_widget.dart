@@ -4,7 +4,7 @@ import 'package:general_utilities/src/res/dimens.dart';
 class DataLoadingWidget extends StatelessWidget {
   final String title;
 
-  const DataLoadingWidget({Key key,@required this.title});
+  const DataLoadingWidget({Key key, @required this.title});
 
   @override
   Widget build(BuildContext context) {
