@@ -11,6 +11,8 @@ class Utilities {
 
     return showModalBottomSheet<void>(
         context: context,
+        isDismissible: false,
+        enableDrag: false,
         builder: (context) {
           return Container(
             padding: const EdgeInsets.all(Dimens.dimenNormal),
