@@ -11,3 +11,7 @@
 * Adding example project
 
 * Adding showSnackBar function
+
+## [0.0.3] Third release
+
+* Improve snackbar to prevent it from drag-down or dismiss by user
