@@ -15,3 +15,7 @@
 ## [0.0.3] Third release
 
 * Improve snackbar to prevent it from drag-down or dismiss by user
+
+## [0.0.4] Release no. 4
+
+* Adding Vertical and Horizontal space widgets to easily add spaces between widgets with customized sizes.
