@@ -1,6 +1,6 @@
 name: general_utilities
 description: A set of general utilites usually needed for any project.
-version: 0.0.4
+version: 0.0.4+3
 homepage: https://github.com/nLoops/General-Utilities
 
 environment:
@@ -9,8 +9,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  flutter_svg: ^0.18.0 # display SVG files
 
 dev_dependencies:
   flutter_test:

@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('General Utilities'),
       ),
       body: FooterLayout(
-        body: NoDataWidget(title: 'No data found', asset: 'assets/images/ic_svg.svg', isSvg: true,),
+        body: NoDataWidget(title: 'No data found', asset: 'assets/images/Icon-512.png'),
         footer: Container(
           color: Colors.grey[100],
           height: 60.0,

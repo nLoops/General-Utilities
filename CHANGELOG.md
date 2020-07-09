@@ -19,3 +19,15 @@
 ## [0.0.4] Release no. 4
 
 * Adding Vertical and Horizontal space widgets to easily add spaces between widgets with customized sizes.
+
+## [0.0.4+1] Release no.o 4.1
+
+* fixing issue of svg dependency.
+
+## [0.0.4+2] Release no. 4.2
+
+* Set flutter version constraints.
+
+##[0.0.4+3] Release no. 4.3
+
+* Remove Flutter_SVG dependency.
