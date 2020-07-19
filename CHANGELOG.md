@@ -28,6 +28,14 @@
 
 * Set flutter version constraints.
 
-##[0.0.4+3] Release no. 4.3
+## [0.0.4+3] Release no. 4.3
 
 * Remove Flutter_SVG dependency.
+
+## [0.0.5] Release no. 0.0.5
+
+* Fix SVG supporting issue
+* Adding options into SnackBar utility
+* Adding Responsive Layout Widget
+* Adding Vertical and Horizontal Space Widget
+* Adding GridView Widget

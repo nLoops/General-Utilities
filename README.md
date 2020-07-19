@@ -32,6 +32,18 @@ I used this widget with ListView to apply a beautiful looking on list items.
 
 Workaround to show snackBar without need to Scaffold.
 
+### Vertical and Horizontal Spacing
+
+Flexible spacing widget you always need to use for example in columns or rows
+
+### Responsive Layout
+
+Just add your Mobile and Tablet version of UI and this widget will choose which one to display upon the current screen size.
+
+### Grid View Widget
+
+Wrapper to help you easily setup a grid view without boilerplate code.
+
 
 ## Feel free to contribute and share useful widgets that prevent repetitive tasks.
 
