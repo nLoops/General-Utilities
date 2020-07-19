@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:general_utilities/src/res/dimens.dart';
 
+/// A Spacing Widget it can be used to add space between
+/// widgets horizontally.
+/// Default value is the normal guideline spacing 16.0
 class HorizontalSpaceWidget extends StatelessWidget {
   final double width;
 

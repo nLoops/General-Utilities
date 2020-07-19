@@ -39,7 +39,9 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Center(
               child: RaisedButton(
             onPressed: () =>
-                Utilities.showSnackBar(context, 'Snackbar widget !'),
+                Utilities.showSnackBar(context, 'Snackbar widget !',
+                msgStyle: TextStyle(color: Colors.red),
+                backgroundColor: Colors.green),
             child: Text('Show snackbar!'),
           )),
         ),
