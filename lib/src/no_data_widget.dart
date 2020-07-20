@@ -7,8 +7,8 @@ class NoDataWidget extends StatelessWidget {
   final String asset;
   final bool isSVG;
 
-  const NoDataWidget({Key key, @required this.title, @required this.asset,
-  this.isSVG = false})
+  const NoDataWidget(
+      {Key key, @required this.title, @required this.asset, this.isSVG = false})
       : super(key: key);
 
   @override
@@ -23,9 +23,7 @@ class NoDataWidget extends StatelessWidget {
             SizedBox(
               width: Dimens.emptyStateSize,
               height: Dimens.emptyStateSize,
-              child: isSVG
-              ? SvgPicture.asset(asset)
-              : Image.asset(asset),
+              child: isSVG ? SvgPicture.asset(asset) : Image.asset(asset),
             ),
             SizedBox(
               height: Dimens.dimenMedium,

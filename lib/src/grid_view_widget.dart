@@ -6,8 +6,13 @@ import 'package:general_utilities/src/res/dimens.dart';
 /// aspect ratio, also the count of displaying items in case of
 /// responsive design support.
 class GridViewWidget extends StatelessWidget {
-  const GridViewWidget({Key key, @required this.children,
-    this.mobileCount = 2, this.tabletCount = 4, this.aspectRatio = 3.0/4.0}) : super(key: key);
+  const GridViewWidget(
+      {Key key,
+      @required this.children,
+      this.mobileCount = 2,
+      this.tabletCount = 4,
+      this.aspectRatio = 3.0 / 4.0})
+      : super(key: key);
 
   final int mobileCount;
   final int tabletCount;
@@ -19,9 +24,8 @@ class GridViewWidget extends StatelessWidget {
     final bool isTablet = MediaQuery.of(context).size.width >= 600;
 
     return GridView(
-      gridDelegate:
-      SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: isTablet
-          ? tabletCount : mobileCount,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: isTablet ? tabletCount : mobileCount,
           childAspectRatio: aspectRatio),
       padding: const EdgeInsets.all(Dimens.dimenNormal),
       children: children,

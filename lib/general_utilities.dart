@@ -8,3 +8,4 @@ export 'src/res/utilities.dart';
 export 'src/vertical_space_widget.dart';
 export 'src/horizontal_space_widget.dart';
 export 'src/responsive_layout_widget.dart';
+export 'src/grid_view_widget.dart';

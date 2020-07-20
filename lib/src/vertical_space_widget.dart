@@ -8,8 +8,7 @@ class VerticalSpaceWidget extends StatelessWidget {
   final double height;
 
   const VerticalSpaceWidget({Key key, this.height = Dimens.dimenNormal})
-  :super(key:key);
-
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

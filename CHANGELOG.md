@@ -39,3 +39,9 @@
 * Adding Responsive Layout Widget
 * Adding Vertical and Horizontal Space Widget
 * Adding GridView Widget
+
+## [0.0.5+1] Release no. 0.0.5+1
+
+* Export grid view widget.
+* Format widgets with dartfrmt tool.
+* Improve package description.
