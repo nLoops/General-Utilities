@@ -1,4 +1,3 @@
-import 'package:example/test_responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:general_utilities/general_utilities.dart';
 
@@ -39,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: [_showLoadingIndicator(), _showSnackBar()],
+          children: [_showLoadingIndicator(), SpaceWidget(), _showSnackBar()],
         )),
       ),
     );
