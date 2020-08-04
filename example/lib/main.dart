@@ -32,36 +32,42 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text('General Utilities'),
       ),
-      body: FooterLayout(
-        body: Column(
-          children: [
-            NoDataWidget(
-              title: 'No data found',
-              asset: 'assets/images/ic_svg.svg',
-              isSVG: true,
-            ),
-            RaisedButton(
-                child: Text('Test Responsive'),
-                onPressed: () => Navigator.of(context).push(
-                    WidgetRouteAnimation(
-                        builder: (context) => TestResponsive(),
-                        animationDirection:
-                            AnimationDirection.from_bottom_to_top)))
-          ],
-        ),
-        footer: Container(
-          color: Colors.grey[100],
-          height: 60.0,
-          child: Center(
-              child: RaisedButton(
-            onPressed: () => Utilities.showSnackBar(
-                context, 'Snackbar widget !',
-                msgStyle: TextStyle(color: Colors.red),
-                backgroundColor: Colors.green),
-            child: Text('Show snackbar!'),
-          )),
-        ),
+      body: Container(
+        margin: const EdgeInsets.only(top: kDimenNormal),
+        constraints: BoxConstraints.expand(),
+        child: SingleChildScrollView(
+            child: Column(
+          mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [_showLoadingIndicator(), _showSnackBar()],
+        )),
       ),
+    );
+  }
+
+  RaisedButton _showLoadingIndicator() {
+    return RaisedButton(
+      onPressed: () {
+        // Show indicator
+        LoadingIndicator.show(context);
+
+        // Mock latency and hide it
+        Future.delayed(Duration(seconds: 3), () => LoadingIndicator.hide());
+      },
+      child: Text('Show Loading Indicator'),
+    );
+  }
+
+  RaisedButton _showSnackBar() {
+    return RaisedButton(
+      onPressed: () {
+        // Show snackbar and action to hide it
+        SnackBarWidget.show(context, 'Hello World!',
+            action: () => SnackBarWidget.hide(),
+            actionTitle: 'HIDE',
+            backgroundColor: Colors.black54);
+      },
+      child: Text('Show Snackbar widget'),
     );
   }
 }
