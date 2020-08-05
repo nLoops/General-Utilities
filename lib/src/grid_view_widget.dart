@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:general_utilities/src/res/dimens.dart';
 
-/// This widget helps to save time of repeatedly build GridView
-/// just pass the List<Widget> you need to display and adjust
-/// aspect ratio, also the count of displaying items in case of
-/// responsive design support.
+/// Create a [GridView] easily and cut boilerplate code
+/// just pass the [children] list and custom your gridview values.
 class GridViewWidget extends StatelessWidget {
   const GridViewWidget(
       {Key key,
@@ -27,7 +25,7 @@ class GridViewWidget extends StatelessWidget {
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: isTablet ? tabletCount : mobileCount,
           childAspectRatio: aspectRatio),
-      padding: const EdgeInsets.all(Dimens.dimenNormal),
+      padding: const EdgeInsets.all(kDimenNormal),
       children: children,
     );
   }

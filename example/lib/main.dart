@@ -1,3 +1,4 @@
+import 'package:example/grid_view_example.dart';
 import 'package:flutter/material.dart';
 import 'package:general_utilities/general_utilities.dart';
 
@@ -9,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'General Utilities',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -38,7 +40,18 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: [_showLoadingIndicator(), SpaceWidget(), _showSnackBar()],
+          children: [
+            _showLoadingIndicator(),
+            SpaceWidget(),
+            _showSnackBar(),
+            SpaceWidget(),
+            RaisedButton(
+                child: Text('Grid view example'),
+                onPressed: () => Navigator.of(context).push(
+                    WidgetRouteAnimation(
+                        builder: (_) => GridViewExample(),
+                        animationDirection: AnimationDirection.fade)))
+          ],
         )),
       ),
     );

@@ -21,12 +21,12 @@ class NoDataWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(
-              width: Dimens.emptyStateSize,
-              height: Dimens.emptyStateSize,
+              width: kDefaultEmptyStateSize,
+              height: kDefaultEmptyStateSize,
               child: isSVG ? SvgPicture.asset(asset) : Image.asset(asset),
             ),
             SizedBox(
-              height: Dimens.dimenMedium,
+              height: kDimenMedium,
             ),
             Text(
               title,
