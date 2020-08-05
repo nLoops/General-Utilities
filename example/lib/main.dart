@@ -1,3 +1,4 @@
+import 'package:example/footer_widget_example.dart';
 import 'package:example/grid_view_example.dart';
 import 'package:flutter/material.dart';
 import 'package:general_utilities/general_utilities.dart';
@@ -50,7 +51,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () => Navigator.of(context).push(
                     WidgetRouteAnimation(
                         builder: (_) => GridViewExample(),
-                        animationDirection: AnimationDirection.fade)))
+                        animationDirection: AnimationDirection.fade))),
+            SpaceWidget(),
+            RaisedButton(
+                child: Text('Footer layout example'),
+                onPressed: () => Navigator.of(context).push(
+                    WidgetRouteAnimation(
+                        builder: (_) => FooterWidgetExample(),
+                        animationDirection:
+                            AnimationDirection.from_top_to_bottom))),
           ],
         )),
       ),

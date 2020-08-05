@@ -2,6 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+/// A [CustomMultiChildLayout] with [body] and [footer]
+/// useful to fixing button at the bottom and make the body scrollable.
+/// check example project for visual demo
 class FooterLayout extends StatelessWidget {
   const FooterLayout({
     Key key,
