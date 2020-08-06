@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// Restart app widget useful to switch app languages
 class RestartWidget extends StatefulWidget {
   RestartWidget({this.child});
 
