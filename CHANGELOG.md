@@ -45,3 +45,10 @@
 * Export grid view widget.
 * Format widgets with dartfrmt tool.
 * Improve package description.
+
+## [0.0.6] Release no. 0.0.6
+
+* Replace space widgets.
+* Add loading indicator widget.
+* Add snackbar widget.
+* Improve widgets docs.

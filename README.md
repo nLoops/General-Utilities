@@ -1,24 +1,28 @@
-# general_utilities
+# General Utilities
 
-A set of general tools needed by any flutter project, shared to avoid boilerplate code.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A set of general utilities useful to any flutter project and help to reduce boilerplate code.
 
 ## Package contains
 
-### Data loading widget
+### Empty state widget
 
-Showing a CircularProgressIndicator with theme secondary color, with title below.
+Display an empty state widget with an image and text for example if you don't have data to display
+
+![](screens/empty.png)
 
 ### Footer Layout
 
-Widget with body it can be Scrolling part and footer it can be a static button.
+You can display a scrollable body and fixed bottom, for example a list of products and fixed ADD_TO_CART button.
 
-### No Data Widget
-
-It can be useful when you need to show a state with image to the user
+![](screens/footerlayout.png)
 
 ### Restart Widget
 
 It can be useful when you need to apply a new config on your app, for example I used this widget into toggle app language.
+
+![](screens/restart.png)
 
 ### Widget Route Animation
 
@@ -28,13 +32,15 @@ Use Navigator.push with passing this widget and pass a custom animation.
 
 I used this widget with ListView to apply a beautiful looking on list items.
 
-### Utilities.showSnackBar
+### Snackbar widget
 
-Workaround to show snackBar without need to Scaffold.
+An overlay widget to display customizable snackbar without scaffold.
 
-### Vertical and Horizontal Spacing
+![](screens/snackbar.png)
 
-Flexible spacing widget you always need to use for example in columns or rows
+### Space Widget
+
+A useful widget to add vertical or horizontal spacing, you can use into ROWS or COLUMNS.
 
 ### Responsive Layout
 
@@ -42,7 +48,9 @@ Just add your Mobile and Tablet version of UI and this widget will choose which 
 
 ### Grid View Widget
 
-Wrapper to help you easily setup a grid view without boilerplate code.
+An easy way to add grid view without boilerplate code, just pass list of widget as children.
+
+![](screens/grid.png)
 
 
 ## Feel free to contribute and share useful widgets that prevent repetitive tasks.
