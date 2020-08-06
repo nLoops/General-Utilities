@@ -1,6 +1,9 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
+/// A single animator widget with latency duration
+/// you can wrap [ListView] or [GridView] items with this
+/// widget to add smooth animation.
 class Animator extends StatefulWidget {
   final Widget child;
   final Duration time;

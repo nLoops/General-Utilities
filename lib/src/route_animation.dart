@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// A [MaterialPageRoute] widget with ready made animations
+/// just pass [AnimationDirection] with [builder] method and
+/// it will handle the rest.
 enum AnimationDirection {
   from_right_to_left,
   from_left_to_right,
