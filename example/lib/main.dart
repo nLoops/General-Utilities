@@ -1,3 +1,4 @@
+import 'package:example/empty_state_example.dart';
 import 'package:example/footer_widget_example.dart';
 import 'package:example/grid_view_example.dart';
 import 'package:flutter/material.dart';
@@ -60,6 +61,14 @@ class _MyHomePageState extends State<MyHomePage> {
                         builder: (_) => FooterWidgetExample(),
                         animationDirection:
                             AnimationDirection.from_top_to_bottom))),
+            SpaceWidget(),
+            RaisedButton(
+                child: Text('Empty state example'),
+                onPressed: () => Navigator.of(context).push(
+                    WidgetRouteAnimation(
+                        builder: (_) => EmptyStateExample(),
+                        animationDirection:
+                            AnimationDirection.from_bottom_to_top))),
           ],
         )),
       ),
