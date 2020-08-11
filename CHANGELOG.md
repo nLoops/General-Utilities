@@ -52,3 +52,8 @@
 * Add loading indicator widget.
 * Add snackbar widget.
 * Improve widgets docs.
+
+## [0.0.6+1] Release no. 0.0.6+1
+
+* Allow to custom snackbar background.
+* Allow styling snackbar message.

@@ -1,6 +1,6 @@
 name: general_utilities
 description: A set of general utilites that required in any project pure in dart and cut the waste time of repetitive tasks.
-version: 0.0.6
+version: 0.0.6+1
 homepage: https://github.com/nLoops/General-Utilities
 
 environment:
