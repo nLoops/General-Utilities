@@ -6,19 +6,28 @@ import 'package:general_utilities/src/res/dimens.dart';
 /// [hide] make snackbar not visible after passed duration
 class SnackBarWidget extends StatelessWidget {
   const SnackBarWidget(
-      {Key key, this.msg, this.action, this.actionTitle, this.backgroundColor})
+      {Key key,
+      this.msg,
+      this.action,
+      this.actionTitle,
+      this.backgroundColor = Colors.black87,
+      this.msgStyle =
+          const TextStyle(fontSize: kDimenNormal, color: Colors.white)})
       : super(key: key);
 
   final String msg;
   final VoidCallback action;
   final String actionTitle;
   final Color backgroundColor;
+  final TextStyle msgStyle;
   static OverlayEntry currentLoader;
 
   static void show(BuildContext context, String msg,
       {VoidCallback action,
       String actionTitle,
-      Color backgroundColor,
+      Color backgroundColor = Colors.black87,
+      TextStyle msgStyle =
+          const TextStyle(fontSize: kDimenNormal, color: Colors.white),
       Duration duration = const Duration(seconds: 2)}) {
     currentLoader = OverlayEntry(builder: (_) {
       return _SnackBarBody(
@@ -26,6 +35,7 @@ class SnackBarWidget extends StatelessWidget {
         action: action,
         actionTitle: actionTitle,
         backgroundColor: backgroundColor,
+        msgStyle: msgStyle,
       );
     });
 
@@ -46,6 +56,7 @@ class SnackBarWidget extends StatelessWidget {
       actionTitle: actionTitle,
       action: action,
       backgroundColor: backgroundColor,
+      msgStyle: msgStyle,
     );
   }
 }
@@ -56,7 +67,8 @@ class _SnackBarBody extends StatelessWidget {
       @required this.msg,
       this.action,
       this.actionTitle,
-      this.backgroundColor = Colors.black54})
+      this.msgStyle,
+      this.backgroundColor})
       : assert(msg != null),
         super(key: key);
 
@@ -64,6 +76,7 @@ class _SnackBarBody extends StatelessWidget {
   final VoidCallback action;
   final String actionTitle;
   final Color backgroundColor;
+  final TextStyle msgStyle;
 
   @override
   Widget build(BuildContext context) {
@@ -102,7 +115,7 @@ class _SnackBarBody extends StatelessWidget {
                 msg,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.bodyText1,
+                style: msgStyle,
               ),
             ),
             SizedBox(

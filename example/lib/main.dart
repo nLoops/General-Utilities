@@ -102,9 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
       onPressed: () {
         // Show snackbar and action to hide it
         SnackBarWidget.show(context, 'Hello World!',
-            action: () => SnackBarWidget.hide(),
-            actionTitle: 'HIDE',
-            backgroundColor: Colors.black54);
+            action: () => SnackBarWidget.hide(), actionTitle: 'HIDE');
       },
       child: Text('Show Snackbar widget'),
     );
