@@ -57,3 +57,8 @@
 
 * Allow to custom snackbar background.
 * Allow styling snackbar message.
+
+## [0.0.7] Release no. 0.0.7
+
+* Put Android circle indicator in the center of the page.
+* Add logger utility which help to log events with method name.
