@@ -87,6 +87,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         builder: (_) => LoadingIndicatorExample(),
                         animationDirection:
                         AnimationDirection.from_bottom_to_top))),
+            SpaceWidget(),
+            RaisedButton(
+                child: Text('Call logger'),
+                onPressed: () => logger.logDebug('Hello World')),
           ],
         )),
       ),

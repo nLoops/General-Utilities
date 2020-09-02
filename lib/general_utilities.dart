@@ -9,3 +9,4 @@ export 'src/grid_view_widget.dart';
 export 'src/loading_indicator.dart';
 export 'src/res/dimens.dart';
 export 'src/space_widget.dart';
+export 'src/logger.dart';
