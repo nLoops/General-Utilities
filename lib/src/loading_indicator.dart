@@ -66,12 +66,18 @@ class LoadingIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: SizedBox(
-        height: height,
-        width: width,
-        child: _ProgressIndicator(
-          child: child,
+    return Container(
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
+      child: Center(
+        child: SizedBox(
+          height: height,
+          width: width,
+          child: Center(
+            child: _ProgressIndicator(
+              child: child,
+            ),
+          ),
         ),
       ),
     );
