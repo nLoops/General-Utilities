@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +17,7 @@ class LoadingIndicator extends StatelessWidget {
       this.height = 250.0,
       this.color = Colors.white70,
       Widget child})
-      : child = child ?? Platform.isAndroid
+      : child = child ?? Platform.isAndroid || kIsWeb
             ? CircularProgressIndicator()
             : CupertinoActivityIndicator();
 
