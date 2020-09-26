@@ -62,3 +62,7 @@
 
 * Put Android circle indicator in the center of the page.
 * Add logger utility which help to log events with method name.
+
+## [0.0.8] Release no. 0.0.8
+
+* Add OtpWidget for auth codes.

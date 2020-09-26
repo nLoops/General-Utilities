@@ -52,6 +52,12 @@ An easy way to add grid view without boilerplate code, just pass list of widget 
 
 ![](screens/grid.png)
 
+### Otp Widget
+
+Make it easy to enter auth otp
+
+![](screens/otp.png)
+
 
 ## Feel free to contribute and share useful widgets that prevent repetitive tasks.
 

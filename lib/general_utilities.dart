@@ -10,3 +10,4 @@ export 'src/loading_indicator.dart';
 export 'src/res/dimens.dart';
 export 'src/space_widget.dart';
 export 'src/logger.dart';
+export 'src/otp_widget.dart';
