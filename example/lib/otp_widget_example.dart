@@ -17,6 +17,10 @@ class OtpWidgetExample extends StatelessWidget {
             border: OtpBorder.RECT,
             screenWidth: MediaQuery.of(context).size.width,
             onComplete: (otp) => print(otp),
+          ),
+          Text(
+            'Enter 6 digits sent to your phone',
+            textAlign: TextAlign.center,
           )
         ],
       ),

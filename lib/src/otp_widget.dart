@@ -80,7 +80,9 @@ class _OtpWidgetState extends State<OtpWidget> {
 
   @override
   Widget build(BuildContext context) {
+    double height = (widget.screenWidth / widget.count) + kDimenNormal;
     return Container(
+      height: height,
       padding: const EdgeInsets.symmetric(horizontal: kDimenMedium),
       child: Row(
         mainAxisSize: MainAxisSize.min,
